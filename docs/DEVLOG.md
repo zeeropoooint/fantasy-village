@@ -5,6 +5,14 @@
 
 ---
 
+## 2026-10-31 · v1.0 发布
+
+### 里程碑
+- 初始化 Git 仓库,以 M0「村庄漫步」作为首个可玩版本打 `v1.0` 标签并发布 GitHub Release
+- 仓库:[zeeropoooint/fantasy-village](https://github.com/zeeropoooint/fantasy-village)(公开)
+- Release:https://github.com/zeeropoooint/fantasy-village/releases/tag/v1.0
+- 新增 `.gitignore`:忽略 `.godot/` 运行时缓存与导出产物,保留所有 `*.import` 元数据
+
 ## 2026-10-24 · 修复:屏幕级 UI 脱离相机变换
 
 ### 修复
