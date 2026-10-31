@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://village_scene"]
+
+[ext_resource type="Script" path="res://scenes/world/village.gd" id="1_village"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="2_player"]
+
+[node name="Village" type="Node2D"]
+script = ExtResource("1_village")
+
+[node name="Ground" type="TileMapLayer" parent="."]
+
+[node name="Decor" type="TileMapLayer" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_player")]

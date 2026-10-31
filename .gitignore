@@ -1,0 +1,34 @@
+# Godot 4 缓存与导入产物(运行时重新生成)
+.godot/
+*.translation
+*.scon
+
+# Godot 导出的可执行文件与数据包
+*.exe
+*.zip
+*.pck
+*.apk
+*.aab
+*.iso
+
+# 临时/崩溃/日志
+*.tmp
+*.bak
+*.log
+crash.txt
+debug.log
+
+# 系统垃圾
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+
+# 编辑器/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

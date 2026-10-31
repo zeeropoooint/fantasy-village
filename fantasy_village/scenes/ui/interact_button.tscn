@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://interact_btn"]
+
+[node name="InteractButton" type="Button"]
+custom_minimum_size = Vector2(88, 88)
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -140.0
+offset_right = -52.0
+offset_bottom = -52.0
+text = "交互"
+theme_override_font_sizes/font_size = 18
+visible = false

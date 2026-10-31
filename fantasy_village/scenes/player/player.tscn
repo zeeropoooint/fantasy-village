@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://player_scene"]
+
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_player"]
+[ext_resource type="Script" path="res://systems/interaction/interaction_detector.gd" id="2_detector"]
+
+[sub_resource type="CircleShape2D" id="body_shape"]
+radius = 5.0
+
+[sub_resource type="CircleShape2D" id="detect_shape"]
+radius = 22.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("body_shape")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+offset = Vector2(0, -6)
+
+[node name="InteractionDetector" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("2_detector")
+
+[node name="DetectShape" type="CollisionShape2D" parent="InteractionDetector"]
+shape = SubResource("detect_shape")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
